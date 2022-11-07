@@ -1,5 +1,7 @@
 function solution(n) {
-  //var answer = 0;
+  /*
+    정수는 1로 나눈 나머지가 0이다
+  */
   let checknum = Math.sqrt(n);
 
   if(checknum % 1 === 0) {
