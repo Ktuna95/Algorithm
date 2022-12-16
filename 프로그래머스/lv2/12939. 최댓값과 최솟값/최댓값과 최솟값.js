@@ -4,21 +4,12 @@
     math.max, math.min으로 최대값 최소값 찾기
     
 */
-function solution(s) {
-    var answer = '';
-    //let str = s.split(" ");
-    //console.log(str[0], str[1])
-    
-    //str = s.split('').map(Number);
+function solution(s) {    
     str = s.split(' ');
-    // console.log(str)
-    // console.log(Math.min(...str), Math.max(...str))
+
     let min = Math.min(...str);
     let max = Math.max(...str);
-    // console.log(min)
-    //console.log(str[0])
-    //answer.push(str.)
-    // console.log(min,max)
+    
     return min + ' ' + max;
 }
 solution("1 2 3 4");
