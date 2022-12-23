@@ -9,6 +9,5 @@ function solution(n) {
         result = dp[i-1] + dp[i-2];
         dp.push(result%1234567);
     }
-    
     return dp[n];
 }
