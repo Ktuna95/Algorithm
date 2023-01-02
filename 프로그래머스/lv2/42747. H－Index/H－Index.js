@@ -6,10 +6,14 @@
  */
 function solution(citations) {
     var answer = 0;
+    // 내림차순
     let sort_citations = citations.sort((a,b)=>b-a);
 
+    // h번 이상 인용된 것이 h번째인 것
     for(answer=0; answer<citations.length; answer++){  
         if(citations[answer]<=answer) return answer;
     }
+
+    //없다면 논문의 개수가 h
     return citations.length;
 }
