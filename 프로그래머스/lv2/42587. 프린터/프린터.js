@@ -8,11 +8,11 @@
 function solution(priorities, location) {
     let answer = 0;         // 인쇄한 횟수    
     let cnt = 0             // 문서의 위치    
-    let idx = location;
+    let idx = location;     // 줄여나갈 idx
     
     while (priorities.length > 0) {
         
-        var que = priorities.shift();   // 맨 앞의 문서를 꺼낸다
+        const que = priorities.shift();   // 맨 앞의 문서를 꺼낸다
                                         // 만약 맨앞의 문서의 우선순위보다 높은 문서가 존재한다면
         if (priorities.filter((e) => e > que).length > 0) {            
             priorities.push(que);       // 인쇄를 하지 않고 배열의 맨 뒤에 넣는다.
